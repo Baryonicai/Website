@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B0F1A;
+  --paper: #F7F8FC;
+  --ink: #E5E7EB;
+  --accent: #3A86FF;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+.card {
+  @apply rounded-2xl bg-white/5 backdrop-blur border border-white/10 shadow-lg;
+}
+
+.link {
+  @apply underline underline-offset-4 hover:no-underline;
+}
